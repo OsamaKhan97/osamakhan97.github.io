@@ -1,0 +1,160 @@
+/* ===== Modern Dark Theme GitHub Profile Viewer ===== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at top left, #0a0a0a, #111, #181818);
+  color: #eee;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* ===== Header ===== */
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 28px;
+  background: linear-gradient(90deg, #4facfe, #00f2fe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+/* ===== Search Bar ===== */
+#search-input {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 10px 15px;
+  color: #fff;
+  width: 250px;
+  outline: none;
+  font-size: 15px;
+  transition: 0.3s ease;
+}
+
+#search-input:focus {
+  box-shadow: 0 0 10px #00f2fe;
+  border-color: #00f2fe;
+}
+
+#search-btn {
+  margin-left: 10px;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(90deg, #4facfe, #00f2fe);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#search-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 10px #00f2fe;
+}
+
+/* ===== Message ===== */
+#message {
+  margin: 10px 0;
+  color: #ff6b6b;
+  font-weight: 600;
+  text-shadow: 0 0 5px rgba(255, 107, 107, 0.6);
+}
+
+/* ===== Profile Container (Glass Effect) ===== */
+#profile-container {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  padding: 25px;
+  text-align: center;
+  width: 320px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+  transition: 0.4s ease;
+}
+
+#profile-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 35px rgba(0, 242, 254, 0.3);
+}
+
+/* ===== Avatar ===== */
+#profile-container img {
+  border-radius: 50%;
+  border: 3px solid #00f2fe;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+/* ===== List ===== */
+#profile-container ul {
+  list-style: none;
+  text-align: left;
+  padding: 0;
+  margin-top: 10px;
+}
+
+#profile-container li {
+  font-size: 15px;
+  margin: 8px 0;
+  padding: 6px 10px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+#profile-container li:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateX(3px);
+}
+
+/* ===== Loading Text ===== */
+#loading {
+  margin-top: 10px;
+  color: #00f2fe;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-shadow: 0 0 10px #00f2fe;
+}
+
+
+/* ===== Footer ===== */
+footer {
+  margin-top: 40px;
+  text-align: center;
+  color: #aaa;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  padding: 15px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+  transition: color 0.3s ease;
+}
+
+footer p:hover {
+  color: #00f2fe;
+  text-shadow: 0 0 10px #00f2fe;
+}
