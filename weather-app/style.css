@@ -1,0 +1,116 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Background */
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #74ABE2, #5563DE);
+  color: #fff;
+}
+
+/* Title */
+h1 {
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Input section */
+#input-field {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+#city-name {
+  padding: 10px 15px;
+  width: 220px;
+  border: none;
+  border-radius: 25px;
+  outline: none;
+  font-size: 1rem;
+  color: #333;
+}
+
+#weather-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  background-color: #ffb703;
+  color: #333;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+#weather-btn:hover {
+  background-color: #ffd166;
+  transform: scale(1.05);
+}
+
+/* Result section (weather card) */
+#result-section {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 25px 30px;
+  border-radius: 20px;
+  text-align: center;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  min-width: 300px;
+  transition: 0.3s ease;
+}
+
+#result-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+#result-section img {
+  width: 90px;
+  height: 90px;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+#result-section p {
+  font-size: 1rem;
+  margin: 6px 0;
+}
+
+/* Small animation */
+#result-section {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.6s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive for mobile */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  #city-name {
+    width: 180px;
+  }
+
+  #result-section {
+    width: 90%;
+  }
+}
