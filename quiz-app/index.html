@@ -1,0 +1,48 @@
+<!Doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="scripts.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <h1>Quiz App</h1>
+
+    <section id="quiz" class="card">
+      <div id="question-container">
+        <div id="question" class="question">Question will appear here</div>
+        <div id="choices" class="choices"></div>
+      </div>
+
+      <div class="controls">
+        <div id="progress" class="progress">Question 0 of 0</div>
+        <div class="buttons">
+          <button id="next-btn" class="btn" disabled>Next</button>
+         
+        </div>
+
+      </div>
+
+      <div id="timer"></div>
+    </section>
+
+    <section id="result" class="card hidden">
+      <p id="score"></p>
+      <p id="best-score"></p>
+      <p id="correct"></p>
+      <p id="wrong"></p>
+      <p id="unanswered"></p>
+    <p id="percentage"></p>
+
+       <button id="restart-btn" class="btn hidden">Restart</button>
+    </section>
+
+  </main>
+
+  <footer>Made by Osama Hasan Khan 💻</footer>
+</body>
+</html>
+
