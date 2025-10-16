@@ -1,0 +1,168 @@
+/* Reset and global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Main container */
+#main-section {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 30px 25px;
+  max-width: 450px;
+  width: 90%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+/* Input area */
+#input-area {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+#input-area input {
+  flex: 1 1 100px;
+  padding: 10px 12px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border 0.3s;
+}
+
+#input-area input:focus {
+  outline: none;
+  border-color: #4caf50;
+}
+
+/* Add Expense Button */
+#add-expense {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s;
+  white-space: nowrap;
+}
+
+#add-expense:hover {
+  background-color: #45a049;
+}
+
+/* Expense List */
+#expense-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+#expense-list ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f9f9f9;
+  padding: 10px 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  font-size: 1rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#expense-list ul li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Delete Button */
+#expense-list ul li button {
+  background-color: #e74c3c;
+  border: none;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.3s;
+}
+
+#expense-list ul li button:hover {
+  background-color: #c0392b;
+}
+
+/* Total Amount */
+#total-amount {
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-top: 15px;
+  text-align: right;
+  color: #333;
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 450px) {
+  #main-section {
+    padding: 20px 15px;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+  }
+  
+  #input-area input {
+    flex: 1 1 100%;
+    font-size: 0.95rem;
+  }
+  
+  #add-expense {
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  #expense-list ul li {
+    font-size: 0.95rem;
+    padding: 8px 10px;
+  }
+
+  #expense-list ul li button {
+    padding: 4px 8px;
+    font-size: 0.85rem;
+  }
+
+  #total-amount {
+    font-size: 1.1rem;
+  }
+}
+
+footer {
+  position: fixed;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.85rem;
+  color: #777;
+  font-style: italic;
+  letter-spacing: 0.5px;
+}
