@@ -31,9 +31,6 @@ const quiz = document.getElementById("quiz")
 const resetbtn = document.getElementById("restart-btn")
 const timer = document.getElementById("timer")
 
-document.addEventListener("DOMContentLoaded", () => {
-
-
 
 let currentQuestionIndex= 0
 let score = 0
@@ -184,5 +181,4 @@ setTimeout(() => {
        
 
 showquestion()
-
-});
+localStorage.removeItem("bestScore")
